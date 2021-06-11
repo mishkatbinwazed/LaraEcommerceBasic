@@ -1,0 +1,23 @@
+Tutorial Five :
+
+## added routes to top navbar of frontend.
+
+## Created AdminPagesController by gitbash.
+
+## craeted view('admin.pages.index');
+## created view('admin.pages.product.create');
+
+## added admin Theme
+## added admin Routes.
+Route::group(['prefix' => 'admin'], function(){
+	Route::get('/', 'AdminPagesController@index')->name('admin.index');
+	Route::get('/product/create', 'AdminPagesController@product_create')->name('admin.product.create');
+	Route::post('/product/create', 'AdminPagesController@product_store')->name('admin.product.store');
+});
+
+
+
+Tutorial Six : 
+
+## Installed a new package -> composer require intervention/image
+## Package Bookmark -> http://image.intervention.io/getting_started/installation
